@@ -3,7 +3,6 @@ node{
     git 'https://github.com/vandana-gupta17/LearnPipeline'
   }
   stage('Compile-Package'){
-      def mvnHome = tool name: 'M3', type: 'maven'
-       sh "${mvnHome}/opt/hcl_launch/mvn"
+       tool name: 'M3', type: 'maven'
   }
 }
